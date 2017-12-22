@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="hydroponicsenvironmentmanagement.settings">
+	<ContentPage.Content>
+            <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+           <BoxView Color="#ccffff" Grid.Row="0" Grid.RowSpan="4"  Grid.ColumnSpan="6" />
+        <Button x:Name="SwitchMode" Clicked="HandleModeClicked" Image="ic_power.png" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="3" />
+        <Label x:Name="CurrentMode" FontSize="20" HorizontalOptions="Center" Text="Manual Mode On" Grid.Row="5" Grid.ColumnSpan="6" />
+        <Label x:Name="AirText" Text="Air" VerticalOptions="Center" Grid.Row="7" Grid.Column="1" />
+        <Label x:Name="LightsText" Text="Lights" VerticalOptions="Center" Grid.Row="8" Grid.Column="1" />
+        <Label x:Name="WaterPumpText" Text="Water Pump" VerticalOptions="Center" Grid.Row="9" Grid.ColumnSpan="2" Grid.Column="1" />
+        <Switch x:Name="AirSwitch" Grid.Row="7" VerticalOptions="Center" Grid.Column="4" IsToggled="false"/>
+        <Switch x:Name="LightsSwitch"  Grid.Row="8" VerticalOptions="Center" Grid.Column="4" IsToggled="false"/>
+        <Switch x:Name="WaterPump"  Grid.Row="9" VerticalOptions="Center" Grid.Column="4" IsToggled="false"/>
+    </Grid>
+	</ContentPage.Content>
+</ContentPage>
